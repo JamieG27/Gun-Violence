@@ -1,14 +1,14 @@
 
 
-<form>
+<form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+method="post">
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
     <input type="text" id="lname" name="lname">
-</form>
+
 <p>Are you a victim of gun violence? </p>
 
-<form>
     <input type="radio" id="html" name="fav_language" value="HTML">
     <label for="html">Yes</label><br>
     <input type="radio" id="css" name="fav_language" value="CSS">
@@ -23,6 +23,9 @@
     <label for="vehicle2"> I own a assault rifle</label><br>
     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
     <label for="vehicle3"> I own a shotgun</label>
+    <input name="send-to" value="jgreenidge@brooklynsteamcenter.org" hidden>
+    <br>
+    <input type="submit" >
 </form>
 
 <style>
